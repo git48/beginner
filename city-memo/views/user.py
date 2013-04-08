@@ -2,11 +2,14 @@
 Write down any action related to the user
 """
 
-class UserIndex():
+from django.view.generic import TemplateView
+from __init__ import AbstractUserView
+
+class UserIndex(AbstractUserView,TemplateView):
     pass
 
-class UserPost():
+class UserPost(AbstractUserView,TemplateView):
     pass
 
-class UserReply():
+class UserReply(AbstractUserView,TemplateView):
     pass
